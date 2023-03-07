@@ -57,9 +57,10 @@ public class frm_dashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
+        panelprincipal.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 51, 0)));
         panelprincipal.setLayout(new java.awt.BorderLayout());
 
-        panelnorte.setBackground(new java.awt.Color(7, 33, 70));
+        panelnorte.setBackground(new java.awt.Color(0, 51, 51));
 
         panelBtnSalir.setBackground(new java.awt.Color(255, 255, 255));
         panelBtnSalir.setForeground(new java.awt.Color(255, 255, 255));
@@ -134,7 +135,7 @@ public class frm_dashboard extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/logope.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/pollertet (4).png"))); // NOI18N
         jLabel4.setText("SINDICATO CANTONAL DE CHOFERES PROFESIONALES DE ARENILLAS");
 
         javax.swing.GroupLayout panelnorteLayout = new javax.swing.GroupLayout(panelnorte);
@@ -146,7 +147,7 @@ public class frm_dashboard extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 779, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 251, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -175,17 +176,18 @@ public class frm_dashboard extends javax.swing.JFrame {
 
         panelprincipal.add(panelnorte, java.awt.BorderLayout.NORTH);
 
-        jPanel1.setBackground(new java.awt.Color(4, 50, 99));
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Usuario.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/chofer (1).png"))); // NOI18N
 
         lblnombreUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblnombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
         lblnombreUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblnombreUsuario.setText("USUARIO");
 
-        pnelDashboard.setBackground(new java.awt.Color(4, 50, 99));
+        pnelDashboard.setBackground(new java.awt.Color(0, 51, 51));
 
+        btnDashboard.setBackground(new java.awt.Color(0, 51, 51));
         btnDashboard.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btnDashboard.setForeground(new java.awt.Color(255, 255, 255));
         btnDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/iconodashboard_1.png"))); // NOI18N
@@ -204,7 +206,7 @@ public class frm_dashboard extends javax.swing.JFrame {
             .addComponent(btnDashboard, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
         );
 
-        pnelCuenta.setBackground(new java.awt.Color(4, 50, 99));
+        pnelCuenta.setBackground(new java.awt.Color(0, 51, 51));
 
         btnCuenta.setBackground(new java.awt.Color(4, 50, 99));
         btnCuenta.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -225,7 +227,7 @@ public class frm_dashboard extends javax.swing.JFrame {
             .addComponent(btnCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
         );
 
-        pnelProductos.setBackground(new java.awt.Color(4, 50, 99));
+        pnelProductos.setBackground(new java.awt.Color(0, 51, 51));
 
         btnadmin.setBackground(new java.awt.Color(4, 50, 99));
         btnadmin.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -246,7 +248,7 @@ public class frm_dashboard extends javax.swing.JFrame {
             .addComponent(btnadmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
         );
 
-        pnelCerrarSesion.setBackground(new java.awt.Color(4, 50, 99));
+        pnelCerrarSesion.setBackground(new java.awt.Color(0, 51, 51));
 
         btnCerrarSesion.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btnCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
@@ -270,14 +272,14 @@ public class frm_dashboard extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnelDashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(99, 99, 99)
-                .addComponent(jLabel1)
-                .addContainerGap(103, Short.MAX_VALUE))
             .addComponent(pnelCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnelProductos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnelCerrarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblnombreUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(109, 109, 109)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -294,10 +296,11 @@ public class frm_dashboard extends javax.swing.JFrame {
                 .addComponent(pnelProductos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(pnelCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(263, Short.MAX_VALUE))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
 
         panelcontenedorPrincipal.setBackground(new java.awt.Color(255, 255, 255));
+        panelcontenedorPrincipal.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 51, 0)));
 
         javax.swing.GroupLayout panelcentroLayout = new javax.swing.GroupLayout(panelcentro);
         panelcentro.setLayout(panelcentroLayout);
@@ -306,7 +309,7 @@ public class frm_dashboard extends javax.swing.JFrame {
             .addGroup(panelcentroLayout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(panelcontenedorPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 1009, Short.MAX_VALUE))
+                .addComponent(panelcontenedorPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 1008, Short.MAX_VALUE))
         );
         panelcentroLayout.setVerticalGroup(
             panelcentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -316,7 +319,7 @@ public class frm_dashboard extends javax.swing.JFrame {
 
         panelprincipal.add(panelcentro, java.awt.BorderLayout.CENTER);
 
-        panelsur.setBackground(new java.awt.Color(7, 33, 70));
+        panelsur.setBackground(new java.awt.Color(0, 51, 51));
 
         lblindicadorVentana.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblindicadorVentana.setForeground(new java.awt.Color(255, 255, 255));
@@ -327,7 +330,7 @@ public class frm_dashboard extends javax.swing.JFrame {
         panelsurLayout.setHorizontalGroup(
             panelsurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelsurLayout.createSequentialGroup()
-                .addContainerGap(1125, Short.MAX_VALUE)
+                .addContainerGap(1121, Short.MAX_VALUE)
                 .addComponent(lblindicadorVentana)
                 .addGap(26, 26, 26))
         );

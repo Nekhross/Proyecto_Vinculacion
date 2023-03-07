@@ -28,19 +28,20 @@ public class pnel_Dashboard extends javax.swing.JPanel {
 
         lblbienvenida = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
-        lblindicadorVentana5 = new javax.swing.JLabel();
-        lblconteoalumnos = new javax.swing.JLabel();
+        panelRound1 = new Clases.PanelRound();
+        jLabel3 = new javax.swing.JLabel();
+        panelRound2 = new Clases.PanelRound();
         jLabel2 = new javax.swing.JLabel();
-        jPanel17 = new javax.swing.JPanel();
-        lblindicadorVentana11 = new javax.swing.JLabel();
+        lblconteoalumnos = new javax.swing.JLabel();
+        lblindicadorVentana5 = new javax.swing.JLabel();
+        panelRound3 = new Clases.PanelRound();
         lblindicadorVentana12 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
+        lblindicadorVentana11 = new javax.swing.JLabel();
+        panelRound4 = new Clases.PanelRound();
         lblindicadorVentana13 = new javax.swing.JLabel();
-        lblconteousuarios = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        lblconteousuarios = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -52,114 +53,136 @@ public class pnel_Dashboard extends javax.swing.JPanel {
         jPanel16.setBackground(new java.awt.Color(0, 204, 153));
         jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblindicadorVentana5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblindicadorVentana5.setForeground(new java.awt.Color(255, 255, 255));
-        lblindicadorVentana5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lblindicadorVentana5.setText("Alumnos Registrados");
-        lblindicadorVentana5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel16.add(lblindicadorVentana5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, -1, -1));
+        panelRound1.setBackground(new java.awt.Color(108, 117, 125));
+        panelRound1.setRoundBottomLeft(20);
+        panelRound1.setRoundBottomRight(20);
+        panelRound1.setRoundTopLeft(20);
+        panelRound1.setRoundTopRight(20);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Administracion");
+
+        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
+        panelRound1.setLayout(panelRound1Layout);
+        panelRound1Layout.setHorizontalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addContainerGap(813, Short.MAX_VALUE))
+        );
+        panelRound1Layout.setVerticalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        panelRound2.setBackground(new java.awt.Color(0, 204, 153));
+        panelRound2.setRoundBottomLeft(20);
+        panelRound2.setRoundBottomRight(20);
+        panelRound2.setRoundTopLeft(20);
+        panelRound2.setRoundTopRight(20);
+        panelRound2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/alumnoico.png"))); // NOI18N
+        panelRound2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 110, 150));
 
         lblconteoalumnos.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         lblconteoalumnos.setForeground(new java.awt.Color(255, 255, 255));
         lblconteoalumnos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblconteoalumnos.setText("0");
-        jPanel16.add(lblconteoalumnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 47));
+        panelRound2.add(lblconteoalumnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 80, 47));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/alumnoico.png"))); // NOI18N
-        jPanel16.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 110, 160));
+        lblindicadorVentana5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblindicadorVentana5.setForeground(new java.awt.Color(255, 255, 255));
+        lblindicadorVentana5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblindicadorVentana5.setText("Alumnos Registrados");
+        lblindicadorVentana5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        panelRound2.add(lblindicadorVentana5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
-        jPanel17.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelRound3.setBackground(new java.awt.Color(0, 153, 153));
+        panelRound3.setRoundBottomLeft(20);
+        panelRound3.setRoundBottomRight(20);
+        panelRound3.setRoundTopLeft(20);
+        panelRound3.setRoundTopRight(20);
+        panelRound3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblindicadorVentana12.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lblindicadorVentana12.setForeground(new java.awt.Color(255, 255, 255));
+        lblindicadorVentana12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblindicadorVentana12.setText("0");
+        panelRound3.add(lblindicadorVentana12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 90, 47));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/iconodocu.png"))); // NOI18N
+        panelRound3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 120, -1));
 
         lblindicadorVentana11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblindicadorVentana11.setForeground(new java.awt.Color(255, 255, 255));
         lblindicadorVentana11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblindicadorVentana11.setText("Oficios Registrados");
         lblindicadorVentana11.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel17.add(lblindicadorVentana11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, -1, -1));
+        panelRound3.add(lblindicadorVentana11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
-        lblindicadorVentana12.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        lblindicadorVentana12.setForeground(new java.awt.Color(255, 255, 255));
-        lblindicadorVentana12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lblindicadorVentana12.setText("0");
-        jPanel17.add(lblindicadorVentana12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 47));
-
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/iconodocu.png"))); // NOI18N
-        jPanel17.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 120, -1));
-
-        jPanel18.setBackground(new java.awt.Color(0, 102, 153));
-        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelRound4.setBackground(new java.awt.Color(0, 102, 153));
+        panelRound4.setRoundBottomLeft(20);
+        panelRound4.setRoundBottomRight(20);
+        panelRound4.setRoundTopLeft(20);
+        panelRound4.setRoundTopRight(20);
+        panelRound4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblindicadorVentana13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblindicadorVentana13.setForeground(new java.awt.Color(255, 255, 255));
         lblindicadorVentana13.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblindicadorVentana13.setText("Cuentas Registradas");
         lblindicadorVentana13.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel18.add(lblindicadorVentana13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, -1, -1));
+        panelRound4.add(lblindicadorVentana13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/usuariodash.png"))); // NOI18N
+        panelRound4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 110, 110));
 
         lblconteousuarios.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         lblconteousuarios.setForeground(new java.awt.Color(255, 255, 255));
         lblconteousuarios.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblconteousuarios.setText("0");
-        jPanel18.add(lblconteousuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 47));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/usuariodash.png"))); // NOI18N
-        jPanel18.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 120, 100));
-
-        jPanel1.setBackground(new java.awt.Color(108, 117, 125));
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Administracion");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        panelRound4.add(lblconteousuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 70, 47));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblbienvenida, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1010, Short.MAX_VALUE)
+            .addComponent(lblbienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61)
-                        .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(26, 26, 26))
+                        .addGap(10, 10, 10)
+                        .addComponent(panelRound2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(panelRound3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(panelRound4, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(80, 80, 80)
                 .addComponent(lblbienvenida)
-                .addGap(66, 66, 66)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(325, Short.MAX_VALUE))
+                .addGap(52, 52, 52)
+                .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelRound2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelRound3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelRound4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -169,10 +192,7 @@ public class pnel_Dashboard extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
     public javax.swing.JLabel lblbienvenida;
     public javax.swing.JLabel lblconteoalumnos;
     public javax.swing.JLabel lblconteousuarios;
@@ -180,5 +200,9 @@ public class pnel_Dashboard extends javax.swing.JPanel {
     private javax.swing.JLabel lblindicadorVentana12;
     private javax.swing.JLabel lblindicadorVentana13;
     private javax.swing.JLabel lblindicadorVentana5;
+    private Clases.PanelRound panelRound1;
+    private Clases.PanelRound panelRound2;
+    private Clases.PanelRound panelRound3;
+    private Clases.PanelRound panelRound4;
     // End of variables declaration//GEN-END:variables
 }

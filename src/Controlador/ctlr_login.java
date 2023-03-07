@@ -224,8 +224,8 @@ public class ctlr_login implements MouseListener, MouseMotionListener, KeyListen
 
                     limpiarLogin();
                     UI = null;
-                    UI.put("OptionPane.background", new Color(4, 50, 99));
-                    UI.put("Panel.background", new Color(4, 50, 99));
+                    UI.put("OptionPane.background", new Color(0,51,51));
+                    UI.put("Panel.background", new Color(0,51,51));
                     JOptionPane.showMessageDialog(null, "<html><FONT COLOR=\"white\">Bievenido al sistema " + Mdlusu.getNombres() + " " + Mdlusu.getApellidos() + "</FONT></html>");
                     conteoTexto = 5;
                     frm_Login.setVisible(false);
@@ -237,8 +237,8 @@ public class ctlr_login implements MouseListener, MouseMotionListener, KeyListen
 
                 } else {
                     UI = null;
-                    UI.put("OptionPane.background", new Color(4, 50, 99));
-                    UI.put("Panel.background", new Color(4, 50, 99));
+                    UI.put("OptionPane.background", new Color(0,51,51));
+                    UI.put("Panel.background", new Color(0,51,51));
                     JOptionPane.showMessageDialog(null, "<html><FONT COLOR=\"white\">Usuario no encontrado</FONT></html>");
                     limpiarLogin();
 

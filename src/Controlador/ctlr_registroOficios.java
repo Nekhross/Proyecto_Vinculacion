@@ -14,8 +14,6 @@ import Vista.pnel_listado;
 import app_registroproductos.App_registroproductosMvc;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Toolkit;
@@ -28,18 +26,12 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.RowFilter;
-import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
-import javax.swing.text.TableView;
 
 public class ctlr_registroOficios implements MouseListener, MouseMotionListener, WindowListener, KeyListener {
 
@@ -178,13 +170,13 @@ public class ctlr_registroOficios implements MouseListener, MouseMotionListener,
         frmdashboard.repaint();
 
         //COLORES MENU DEFAULT
-        frmdashboard.pnelDashboard.setBackground(new Color(4, 50, 99));
+        frmdashboard.pnelDashboard.setBackground(new Color(0,51,51));
         frmdashboard.btnDashboard.setForeground(Color.white);
-        frmdashboard.pnelCuenta.setBackground(new Color(4, 50, 99));
+        frmdashboard.pnelCuenta.setBackground(new Color(0,51,51));
         frmdashboard.btnCuenta.setForeground(Color.white);
-        frmdashboard.pnelProductos.setBackground(new Color(4, 50, 99));
+        frmdashboard.pnelProductos.setBackground(new Color(0,51,51));
         frmdashboard.btnadmin.setForeground(Color.white);
-        frmdashboard.pnelCerrarSesion.setBackground(new Color(4, 50, 99));
+        frmdashboard.pnelCerrarSesion.setBackground(new Color(0,51,51));
         frmdashboard.btnCerrarSesion.setForeground(Color.white);
 
         switch (verificadoNavegacion) {
@@ -194,7 +186,7 @@ public class ctlr_registroOficios implements MouseListener, MouseMotionListener,
                 panelDashboard.lblbienvenida.setText("Bienvenido al sistema!, " + Mdlusu.getNombres());
                 frmdashboard.lblindicadorVentana.setText("DashBoard");
                 frmdashboard.pnelDashboard.setBackground(Color.white);
-                frmdashboard.btnDashboard.setForeground(new Color(4, 50, 99));
+                frmdashboard.btnDashboard.setForeground(new Color(0,51,51));
                 Navegacion2panelesOff();
                 panelDashboard.setVisible(true);
 
@@ -213,7 +205,7 @@ public class ctlr_registroOficios implements MouseListener, MouseMotionListener,
                 frmdashboard.setTitle("ECCP | Cuenta");
                 frmdashboard.lblindicadorVentana.setText("Cuenta");
                 frmdashboard.pnelCuenta.setBackground(Color.white);
-                frmdashboard.btnCuenta.setForeground(new Color(4, 50, 99));
+                frmdashboard.btnCuenta.setForeground(new Color(0,51,51));
                 Navegacion2panelesOff();
                 panelCuentas.setVisible(true);
                 verificadoCampos = false;
@@ -238,14 +230,14 @@ public class ctlr_registroOficios implements MouseListener, MouseMotionListener,
                 frmdashboard.lblindicadorVentana.setText("Menu Administracion");
                 panelMenuadmin.setVisible(true);
                 frmdashboard.pnelProductos.setBackground(Color.white);
-                frmdashboard.btnadmin.setForeground(new Color(4, 50, 99));
+                frmdashboard.btnadmin.setForeground(new Color(0,51,51));
                 Navegacion2panelesOff();
                 break;
 
             case 4:
                 frmdashboard.setTitle("ECCP | Cierre de Sesion");
                 frmdashboard.pnelCerrarSesion.setBackground(Color.white);
-                frmdashboard.btnCerrarSesion.setForeground(new Color(4, 50, 99));
+                frmdashboard.btnCerrarSesion.setForeground(new Color(0,51,51));
 
                 String botones[] = {"si", "cancelar"};
                 int seleccion = JOptionPane.showOptionDialog(null, "<html><FONT COLOR=\"white\">¿Desea cerrar sesion?</FONT></html>", "Aviso", 0, 0, null, botones, this);

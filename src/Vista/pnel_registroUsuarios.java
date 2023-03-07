@@ -27,185 +27,240 @@ public class pnel_registroUsuarios extends javax.swing.JPanel {
     private void initComponents() {
 
         panelinicioSesion = new javax.swing.JPanel();
-        panelRound1 = new Clases.PanelRound();
-        btnregistrar = new javax.swing.JLabel();
-        txtusuario = new javax.swing.JTextField();
         lblclave = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblnombres = new javax.swing.JLabel();
         lblapellidos = new javax.swing.JLabel();
-        txtapellidos = new javax.swing.JTextField();
-        panelRound2 = new Clases.PanelRound();
-        btncancelar = new javax.swing.JLabel();
-        txtnombres = new javax.swing.JTextField();
         lblcedula = new javax.swing.JLabel();
-        txtcedula = new javax.swing.JTextField();
         lblUsuario1 = new javax.swing.JLabel();
         btnmostrar = new javax.swing.JLabel();
+        panelRound1 = new Clases.PanelRound();
+        btnregistrar = new javax.swing.JLabel();
+        panelRound2 = new Clases.PanelRound();
+        btncancelar = new javax.swing.JLabel();
+        panelRound3 = new Clases.PanelRound();
+        txtusuario = new javax.swing.JTextField();
+        panelRound4 = new Clases.PanelRound();
         txtclave = new javax.swing.JPasswordField();
+        panelRound5 = new Clases.PanelRound();
+        txtnombres = new javax.swing.JTextField();
+        panelRound6 = new Clases.PanelRound();
+        txtapellidos = new javax.swing.JTextField();
+        panelRound7 = new Clases.PanelRound();
+        txtcedula = new javax.swing.JTextField();
 
-        panelinicioSesion.setBackground(new java.awt.Color(4, 50, 99));
+        panelinicioSesion.setBackground(new java.awt.Color(0, 51, 51));
+        panelinicioSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblclave.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblclave.setForeground(new java.awt.Color(255, 255, 255));
+        lblclave.setText("Contraseña: (*)");
+        panelinicioSesion.add(lblclave, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/chofer (1).png"))); // NOI18N
+        jLabel2.setText("Registro de Cuenta");
+        panelinicioSesion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+
+        lblnombres.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblnombres.setForeground(new java.awt.Color(255, 255, 255));
+        lblnombres.setText("Nombres: (*)");
+        panelinicioSesion.add(lblnombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+
+        lblapellidos.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblapellidos.setForeground(new java.awt.Color(255, 255, 255));
+        lblapellidos.setText("Apellidos: (*)");
+        panelinicioSesion.add(lblapellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
+
+        lblcedula.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblcedula.setForeground(new java.awt.Color(255, 255, 255));
+        lblcedula.setText("Cedula: (*)");
+        panelinicioSesion.add(lblcedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+
+        lblUsuario1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblUsuario1.setForeground(new java.awt.Color(255, 255, 255));
+        lblUsuario1.setText("Usuario: (*)");
+        panelinicioSesion.add(lblUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+
+        btnmostrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnmostrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/ojoCerrado.png"))); // NOI18N
+        btnmostrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        panelinicioSesion.add(btnmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, -1, 36));
 
         panelRound1.setBackground(new java.awt.Color(255, 255, 255));
-        panelRound1.setRoundBottomLeft(50);
-        panelRound1.setRoundBottomRight(50);
-        panelRound1.setRoundTopLeft(50);
-        panelRound1.setRoundTopRight(50);
+        panelRound1.setRoundBottomLeft(20);
+        panelRound1.setRoundBottomRight(20);
+        panelRound1.setRoundTopLeft(20);
+        panelRound1.setRoundTopRight(20);
 
-        btnregistrar.setBackground(new java.awt.Color(255, 255, 255));
-        btnregistrar.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        btnregistrar.setForeground(new java.awt.Color(0, 68, 129));
-        btnregistrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnregistrar.setText("Registrar Usuario");
+        btnregistrar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnregistrar.setForeground(new java.awt.Color(0, 51, 51));
+        btnregistrar.setText("   Registrarse");
         btnregistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnregistrar, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+            .addComponent(btnregistrar, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnregistrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+            .addComponent(btnregistrar, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
-        txtusuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtusuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        panelinicioSesion.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 570, 130, 40));
 
-        lblclave.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblclave.setForeground(new java.awt.Color(255, 255, 255));
-        lblclave.setText("Contraseña: (*)");
+        panelRound2.setBackground(new java.awt.Color(204, 0, 0));
+        panelRound2.setRoundBottomLeft(20);
+        panelRound2.setRoundBottomRight(20);
+        panelRound2.setRoundTopLeft(20);
+        panelRound2.setRoundTopRight(20);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Registro de Cuenta");
-
-        lblnombres.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblnombres.setForeground(new java.awt.Color(255, 255, 255));
-        lblnombres.setText("Nombres: (*)");
-
-        lblapellidos.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblapellidos.setForeground(new java.awt.Color(255, 255, 255));
-        lblapellidos.setText("Apellidos: (*)");
-
-        txtapellidos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtapellidos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-
-        panelRound2.setBackground(new java.awt.Color(255, 255, 255));
-        panelRound2.setRoundBottomLeft(50);
-        panelRound2.setRoundBottomRight(50);
-        panelRound2.setRoundTopLeft(50);
-        panelRound2.setRoundTopRight(50);
-
-        btncancelar.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        btncancelar.setForeground(new java.awt.Color(255, 51, 0));
-        btncancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btncancelar.setText("Cancelar");
+        btncancelar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btncancelar.setForeground(new java.awt.Color(0, 0, 0));
+        btncancelar.setText("     Cancelar");
         btncancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
         panelRound2.setLayout(panelRound2Layout);
         panelRound2Layout.setHorizontalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btncancelar, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+            .addComponent(btncancelar, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
         );
         panelRound2Layout.setVerticalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btncancelar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+            .addComponent(btncancelar, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
-        txtnombres.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtnombres.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        panelinicioSesion.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 570, -1, -1));
 
-        lblcedula.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblcedula.setForeground(new java.awt.Color(255, 255, 255));
-        lblcedula.setText("Cedula: (*)");
+        panelRound3.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound3.setRoundBottomLeft(20);
+        panelRound3.setRoundBottomRight(20);
+        panelRound3.setRoundTopLeft(20);
+        panelRound3.setRoundTopRight(20);
 
-        txtcedula.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtcedula.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        txtusuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtusuario.setBorder(null);
 
-        lblUsuario1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        lblUsuario1.setText("Usuario: (*)");
+        javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
+        panelRound3.setLayout(panelRound3Layout);
+        panelRound3Layout.setHorizontalGroup(
+            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        panelRound3Layout.setVerticalGroup(
+            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        btnmostrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnmostrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/ojoCerrado.png"))); // NOI18N
-        btnmostrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        panelinicioSesion.add(panelRound3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 390, 30));
+
+        panelRound4.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound4.setRoundBottomLeft(20);
+        panelRound4.setRoundBottomRight(20);
+        panelRound4.setRoundTopLeft(20);
+        panelRound4.setRoundTopRight(20);
 
         txtclave.setBorder(null);
 
-        javax.swing.GroupLayout panelinicioSesionLayout = new javax.swing.GroupLayout(panelinicioSesion);
-        panelinicioSesion.setLayout(panelinicioSesionLayout);
-        panelinicioSesionLayout.setHorizontalGroup(
-            panelinicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(jLabel2))
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(lblUsuario1))
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(lblclave))
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(lblapellidos))
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(lblcedula))
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(panelRound2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(panelinicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblnombres)
-                    .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                        .addGroup(panelinicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtclave, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcedula, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnmostrar))))
+        javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
+        panelRound4.setLayout(panelRound4Layout);
+        panelRound4Layout.setHorizontalGroup(
+            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtclave, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
-        panelinicioSesionLayout.setVerticalGroup(
-            panelinicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelinicioSesionLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel2)
-                .addGap(22, 22, 22)
-                .addComponent(lblUsuario1)
-                .addGap(8, 8, 8)
-                .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14)
-                .addComponent(lblclave)
-                .addGap(14, 14, 14)
-                .addGroup(panelinicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtclave, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnmostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblnombres)
-                .addGap(8, 8, 8)
-                .addComponent(txtnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14)
-                .addComponent(lblapellidos)
-                .addGap(8, 8, 8)
-                .addComponent(txtapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14)
-                .addComponent(lblcedula)
-                .addGap(8, 8, 8)
-                .addComponent(txtcedula, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
-                .addGroup(panelinicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(panelRound2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(35, Short.MAX_VALUE))
+        panelRound4Layout.setVerticalGroup(
+            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtclave, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
+
+        panelinicioSesion.add(panelRound4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
+
+        panelRound5.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound5.setRoundBottomLeft(20);
+        panelRound5.setRoundBottomRight(20);
+        panelRound5.setRoundTopLeft(20);
+        panelRound5.setRoundTopRight(20);
+
+        txtnombres.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtnombres.setBorder(null);
+
+        javax.swing.GroupLayout panelRound5Layout = new javax.swing.GroupLayout(panelRound5);
+        panelRound5.setLayout(panelRound5Layout);
+        panelRound5Layout.setHorizontalGroup(
+            panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        panelRound5Layout.setVerticalGroup(
+            panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtnombres, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        panelinicioSesion.add(panelRound5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, 30));
+
+        panelRound6.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound6.setRoundBottomLeft(20);
+        panelRound6.setRoundBottomRight(20);
+        panelRound6.setRoundTopLeft(20);
+        panelRound6.setRoundTopRight(20);
+
+        txtapellidos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtapellidos.setBorder(null);
+
+        javax.swing.GroupLayout panelRound6Layout = new javax.swing.GroupLayout(panelRound6);
+        panelRound6.setLayout(panelRound6Layout);
+        panelRound6Layout.setHorizontalGroup(
+            panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        panelRound6Layout.setVerticalGroup(
+            panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtapellidos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        panelinicioSesion.add(panelRound6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, -1, -1));
+
+        panelRound7.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound7.setRoundBottomLeft(20);
+        panelRound7.setRoundBottomRight(20);
+        panelRound7.setRoundTopLeft(20);
+        panelRound7.setRoundTopRight(20);
+
+        txtcedula.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtcedula.setBorder(null);
+
+        javax.swing.GroupLayout panelRound7Layout = new javax.swing.GroupLayout(panelRound7);
+        panelRound7.setLayout(panelRound7Layout);
+        panelRound7Layout.setHorizontalGroup(
+            panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRound7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtcedula, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        panelRound7Layout.setVerticalGroup(
+            panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtcedula, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        panelinicioSesion.add(panelRound7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -235,6 +290,11 @@ public class pnel_registroUsuarios extends javax.swing.JPanel {
     public javax.swing.JLabel lblnombres;
     private Clases.PanelRound panelRound1;
     private Clases.PanelRound panelRound2;
+    private Clases.PanelRound panelRound3;
+    private Clases.PanelRound panelRound4;
+    private Clases.PanelRound panelRound5;
+    private Clases.PanelRound panelRound6;
+    private Clases.PanelRound panelRound7;
     public javax.swing.JPanel panelinicioSesion;
     public javax.swing.JTextField txtapellidos;
     public javax.swing.JTextField txtcedula;

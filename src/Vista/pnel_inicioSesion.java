@@ -27,14 +27,10 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
     private void initComponents() {
 
         panelinicioSesion = new javax.swing.JPanel();
-        panelRound1 = new Clases.PanelRound();
-        btniniciarSesion = new javax.swing.JLabel();
         txtusuario = new javax.swing.JTextField();
         txtclave = new javax.swing.JPasswordField();
         lblclave = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        panelRound3 = new Clases.PanelRound();
-        btnregistrarse = new javax.swing.JLabel();
         btnmostrar = new javax.swing.JLabel();
         lblusuario = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -42,37 +38,15 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
         jSeparator2 = new javax.swing.JSeparator();
         btnmostrar1 = new javax.swing.JLabel();
         btnmostrar2 = new javax.swing.JLabel();
+        panelRound1 = new Clases.PanelRound();
+        btniniciarSesion = new javax.swing.JLabel();
+        panelRound2 = new Clases.PanelRound();
+        btnregistrarse = new javax.swing.JLabel();
 
-        panelinicioSesion.setBackground(new java.awt.Color(4, 50, 99));
+        panelinicioSesion.setBackground(new java.awt.Color(0, 51, 51));
         panelinicioSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelRound1.setBackground(new java.awt.Color(255, 255, 255));
-        panelRound1.setRoundBottomLeft(50);
-        panelRound1.setRoundBottomRight(50);
-        panelRound1.setRoundTopLeft(50);
-        panelRound1.setRoundTopRight(50);
-
-        btniniciarSesion.setBackground(new java.awt.Color(255, 255, 255));
-        btniniciarSesion.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        btniniciarSesion.setForeground(new java.awt.Color(0, 68, 129));
-        btniniciarSesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btniniciarSesion.setText("Iniciar Sesion");
-        btniniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btniniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 367, Short.MAX_VALUE)
-        );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btniniciarSesion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-        );
-
-        panelinicioSesion.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 470, -1, -1));
-
-        txtusuario.setBackground(new java.awt.Color(4, 50, 99));
+        txtusuario.setBackground(new java.awt.Color(0, 51, 51));
         txtusuario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtusuario.setForeground(new java.awt.Color(255, 255, 255));
         txtusuario.setBorder(null);
@@ -81,7 +55,7 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
         txtusuario.setFocusable(false);
         panelinicioSesion.add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 270, 361, 36));
 
-        txtclave.setBackground(new java.awt.Color(4, 50, 99));
+        txtclave.setBackground(new java.awt.Color(0, 51, 51));
         txtclave.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         txtclave.setForeground(new java.awt.Color(255, 255, 255));
         txtclave.setBorder(null);
@@ -97,33 +71,7 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Acceso al sistema");
-        panelinicioSesion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
-
-        panelRound3.setBackground(new java.awt.Color(255, 255, 255));
-        panelRound3.setRoundBottomLeft(50);
-        panelRound3.setRoundBottomRight(50);
-        panelRound3.setRoundTopLeft(50);
-        panelRound3.setRoundTopRight(50);
-
-        btnregistrarse.setBackground(new java.awt.Color(255, 255, 255));
-        btnregistrarse.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        btnregistrarse.setForeground(new java.awt.Color(0, 68, 129));
-        btnregistrarse.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnregistrarse.setText("Registrarse");
-        btnregistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
-        panelRound3.setLayout(panelRound3Layout);
-        panelRound3Layout.setHorizontalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnregistrarse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        panelRound3Layout.setVerticalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnregistrarse, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-        );
-
-        panelinicioSesion.add(panelRound3, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 556, 367, -1));
+        panelinicioSesion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
 
         btnmostrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnmostrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/ojoCerrado.png"))); // NOI18N
@@ -135,8 +83,8 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
         lblusuario.setText("Usuario:");
         panelinicioSesion.add(lblusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 220, -1, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Usuario.png"))); // NOI18N
-        panelinicioSesion.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 37, -1, -1));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/chofer (2).png"))); // NOI18N
+        panelinicioSesion.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
@@ -155,17 +103,70 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
         btnmostrar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panelinicioSesion.add(btnmostrar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
 
+        panelRound1.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound1.setRoundBottomLeft(20);
+        panelRound1.setRoundBottomRight(20);
+        panelRound1.setRoundTopLeft(20);
+        panelRound1.setRoundTopRight(20);
+
+        btniniciarSesion.setBackground(new java.awt.Color(0, 51, 51));
+        btniniciarSesion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btniniciarSesion.setForeground(new java.awt.Color(0, 51, 51));
+        btniniciarSesion.setText("   Iniciar Sesion");
+        btniniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
+        panelRound1.setLayout(panelRound1Layout);
+        panelRound1Layout.setHorizontalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btniniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+        );
+        panelRound1Layout.setVerticalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btniniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        panelinicioSesion.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 150, 30));
+
+        panelRound2.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound2.setRoundBottomLeft(20);
+        panelRound2.setRoundBottomRight(20);
+        panelRound2.setRoundTopLeft(20);
+        panelRound2.setRoundTopRight(20);
+
+        btnregistrarse.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnregistrarse.setForeground(new java.awt.Color(0, 51, 255));
+        btnregistrarse.setText("     Registrarse");
+        btnregistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
+        panelRound2.setLayout(panelRound2Layout);
+        panelRound2Layout.setHorizontalGroup(
+            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnregistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelRound2Layout.setVerticalGroup(
+            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnregistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelinicioSesion.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 510, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelinicioSesion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelinicioSesion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelinicioSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelinicioSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 590, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -184,7 +185,7 @@ public class pnel_inicioSesion extends javax.swing.JPanel {
     public javax.swing.JLabel lblclave;
     public javax.swing.JLabel lblusuario;
     private Clases.PanelRound panelRound1;
-    private Clases.PanelRound panelRound3;
+    private Clases.PanelRound panelRound2;
     public javax.swing.JPanel panelinicioSesion;
     public javax.swing.JPasswordField txtclave;
     public javax.swing.JTextField txtusuario;

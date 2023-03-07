@@ -12,7 +12,7 @@ public class Conexion {
     public Connection conexion() {
         String cadena = "jdbc:postgresql://localhost:5432/vinculacionchoferes";
         String user = "postgres";
-        String pass = "root";
+        String pass = "postgres";
         Connection cnn = null;
         try {
             cnn = DriverManager.getConnection(cadena, user, pass);

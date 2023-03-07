@@ -28,40 +28,51 @@ public class frm_Login extends javax.swing.JFrame {
         panelnorte = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         panelnorte2 = new Clases.PanelRound();
+        jLabel1 = new javax.swing.JLabel();
         panelcentro = new javax.swing.JPanel();
         panelGif = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         lbltexto = new javax.swing.JLabel();
         panelLogin = new javax.swing.JPanel();
         panelsur = new javax.swing.JPanel();
         panelsur2 = new javax.swing.JPanel();
-        panelRound2 = new Clases.PanelRound();
         btnsalir = new javax.swing.JLabel();
+        panelRound1 = new Clases.PanelRound();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         panelprincipal.setLayout(new java.awt.BorderLayout());
 
-        panelnorte.setBackground(new java.awt.Color(7, 33, 70));
+        panelnorte.setBackground(new java.awt.Color(0, 51, 51));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("SCPA");
 
         panelnorte2.setBackground(new java.awt.Color(255, 255, 255));
-        panelnorte2.setRoundTopLeft(100);
+        panelnorte2.setRoundTopLeft(65);
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 68, 129));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Bienvenido");
 
         javax.swing.GroupLayout panelnorte2Layout = new javax.swing.GroupLayout(panelnorte2);
         panelnorte2.setLayout(panelnorte2Layout);
         panelnorte2Layout.setHorizontalGroup(
             panelnorte2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 425, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelnorte2Layout.createSequentialGroup()
+                .addContainerGap(108, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82))
         );
         panelnorte2Layout.setVerticalGroup(
             panelnorte2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelnorte2Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelnorteLayout = new javax.swing.GroupLayout(panelnorte);
@@ -87,14 +98,8 @@ public class frm_Login extends javax.swing.JFrame {
 
         panelGif.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 68, 129));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Bienvenido");
-
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/logo.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/pollertet (1).png"))); // NOI18N
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         lbltexto.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -106,22 +111,23 @@ public class frm_Login extends javax.swing.JFrame {
         panelGif.setLayout(panelGifLayout);
         panelGifLayout.setHorizontalGroup(
             panelGifLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 425, Short.MAX_VALUE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lbltexto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
+            .addGroup(panelGifLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbltexto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelGifLayout.setVerticalGroup(
             panelGifLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelGifLayout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbltexto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbltexto, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        panelLogin.setBackground(new java.awt.Color(4, 50, 99));
+        panelLogin.setBackground(new java.awt.Color(0, 51, 51));
 
         javax.swing.GroupLayout panelLoginLayout = new javax.swing.GroupLayout(panelLogin);
         panelLogin.setLayout(panelLoginLayout);
@@ -155,37 +161,35 @@ public class frm_Login extends javax.swing.JFrame {
 
         panelprincipal.add(panelcentro, java.awt.BorderLayout.CENTER);
 
-        panelsur.setBackground(new java.awt.Color(7, 33, 70));
+        panelsur.setBackground(new java.awt.Color(0, 51, 51));
 
         panelsur2.setBackground(new java.awt.Color(255, 255, 255));
         panelsur2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelRound2.setBackground(new java.awt.Color(204, 51, 0));
-        panelRound2.setRoundBottomLeft(50);
-        panelRound2.setRoundBottomRight(50);
-        panelRound2.setRoundTopLeft(50);
-        panelRound2.setRoundTopRight(50);
-
-        btnsalir.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        btnsalir.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnsalir.setForeground(new java.awt.Color(255, 255, 255));
-        btnsalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnsalir.setText("Salir");
+        btnsalir.setText("   Salir");
         btnsalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        panelsur2.add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 100, 38));
 
-        javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
-        panelRound2.setLayout(panelRound2Layout);
-        panelRound2Layout.setHorizontalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+        panelRound1.setBackground(new java.awt.Color(255, 0, 0));
+        panelRound1.setRoundBottomLeft(20);
+        panelRound1.setRoundBottomRight(20);
+        panelRound1.setRoundTopLeft(20);
+        panelRound1.setRoundTopRight(20);
+
+        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
+        panelRound1.setLayout(panelRound1Layout);
+        panelRound1Layout.setHorizontalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
-        panelRound2Layout.setVerticalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound2Layout.createSequentialGroup()
-                .addComponent(btnsalir)
-                .addGap(0, 6, Short.MAX_VALUE))
+        panelRound1Layout.setVerticalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 38, Short.MAX_VALUE)
         );
 
-        panelsur2.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, -1, -1));
+        panelsur2.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
 
         javax.swing.GroupLayout panelsurLayout = new javax.swing.GroupLayout(panelsur);
         panelsur.setLayout(panelsurLayout);
@@ -193,7 +197,7 @@ public class frm_Login extends javax.swing.JFrame {
             panelsurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelsurLayout.createSequentialGroup()
                 .addGap(0, 527, Short.MAX_VALUE)
-                .addComponent(panelsur2, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(panelsur2, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         panelsurLayout.setVerticalGroup(
             panelsurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,7 +216,7 @@ public class frm_Login extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelprincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelprincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE)
         );
 
         pack();
@@ -269,7 +273,7 @@ public class frm_Login extends javax.swing.JFrame {
     public javax.swing.JLabel lbltexto;
     public javax.swing.JPanel panelGif;
     public javax.swing.JPanel panelLogin;
-    private Clases.PanelRound panelRound2;
+    private Clases.PanelRound panelRound1;
     public javax.swing.JPanel panelcentro;
     public javax.swing.JPanel panelnorte;
     public Clases.PanelRound panelnorte2;
